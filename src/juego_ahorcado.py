@@ -63,8 +63,21 @@ def ha_ganado(palabra_enmascarada):
 
 # TODO: Implementa la función mostrar_estado
 
-# TODO: Implementa la función pedir_letra
+def pedir_letra():
+    while True:
+        letra=input("Introduce una letra:").lower().strip()
+        if not letra.isalpha():
+            print("Debes introducir una letra: ")
+            continue
+        if not len(letra)==1:
+            print("Debes introducir solo una letra")
+            continue
+        if letra in ("abcdfegjsh"):
+            print("Esa letra ya se ha usado anteriormente")
+        else:
+            return letra 
 
-# TODO: Implementa la función jugar
+
+def jugar()
 
 # TODO: Escribe el programa principal
